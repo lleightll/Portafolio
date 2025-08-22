@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- 
+Diseño por LUIS ENRIQUE DÌAZ DE LEON QUEZADA
+Layout por ÀNGEL DE JESÙS TORREZ OVALLE
+Code Mannager por GERARDO URIEL MARTINEZ MONTELONGO
+
+ÙLTIMA MODIFICACIÒN
+
+6 DE AGOSTO DEL 2025
+
+
+-->
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ROCK</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleMainImages.css">
+  <link rel="stylesheet" href="header-style.css">
+ <link rel="stylesheet" href="news.css">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gothic&display=swap" rel="stylesheet">
+	<script src="js/cambio_de_cancion.js"></script>
+  <script src="js/left_Sidebar.js"></script>
+  <script src="js/Agrandar_image.js"></script>
+
+
+  
+
+<style>
+  
+  body {
+      justify-content: center;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+      font-family: "Noto Sans", sans-serif;
+}
+    }
+
+</style>
+
+</head>
+<body onload="mostrar()">
+
+
+<header>
+
+ <button class="menu-btn" id="menuToggle">☰</button>
+
+
+
+    <h1>
+      Bandas Locales
+    </h1>
+
+
+  <nav id="sidebar">
+    <ul>
+     <!-- <li><button class="sidebar-btn">Bandas</button></li> -->
+      <li><a href="calendario.html"><button class="sidebar-btn">Eventos</button></a></li>
+    <li><a href="https://www.facebook.com/CorredorCulturalCarranza"><button class="sidebar-btn">Corredor</button></a></li>
+        <li><a href="Acerca de.html"><button class="sidebar-btn">Acerca De</button></a></li>
+
+
+    </ul>
+  </nav>
+
+<!--
+
+  Agregar sistema de Registro si se permite
+   <button class="login-btn">  🔐 </button>
+-->>
+</header>
+
+
+
+
+  
+
+<!-- Seccion 1 Bandas -->
+
+  <section class="carousel-container" id="carouselIMG">
+    <img src="Images/content/impermanence.jpg" class="carousel-image active" alt="impermanence">
+    <img src="Images/content/libelula.jpg" class="carousel-image" alt="libelula">
+    <img src="Images/content/near autopsy.jpg" class="carousel-image" alt="near autopsy">
+    <img src="Images/content/ningun artista.jpg" class="carousel-image" alt="ningun artista">
+     <img src="Images/content/error.jpg" class="carousel-image" alt="error">
+      <img src="Images/content/october 29.jpg" class="carousel-image" alt="october 29">
+      <img src="Images/content/one break.png" class="carousel-image" alt="one break">
+      <img src="Images/content/planeta e.jpg" class="carousel-image" alt="planeta e">
+      <img src="Images/content/primos.png" class="carousel-image" alt="primos">
+      <img src="Images/content/Rotten pays 1080.webp" class="carousel-image" alt="Rotten pays 1080">
+
+
+
+    <div class="text-overlay" id="carousel-text">
+
+
+      <h1 id="titulo-texto"></h1>
+      <p id="parrafo-texto"></p>
+
+    </div>
+
+  </section>
+
+<script src="js/cambio_de_imagen.js"></script>
+
+
+
+<!-- Seccion 2 spotfy-wrapper -->
+
+  <div class="carousel-wrapper">
+    <button type="button" onclick="anterior()">❮</button>
+    <div class="carousel" id="carousel"></div>
+    <button type="button" onclick="siguiente()">❯</button>
+  </div>
+
+
+<section class="News">
+  <h1>Otras Noticias</h1>
+  <p>Los sonidos del rock están más cerca de lo que imaginas. Las bandas locales toman los escenarios de bares, foros y espacios urbanos con presentaciones en vivo que capturan la esencia del rock independiente. Cada evento es una oportunidad para descubrir nuevas propuestas, estilos auténticos y la fuerza creativa de tu ciudad. Mantente al tanto de las próximas fechas, lugares y alineaciones. El rock local está sonando fuerte, y tú puedes ser parte de esa experiencia. </p>
+
+
+<div class="simple-carousel">
+  <img src="Images/news/planeta post.jpg" alt="Noticia 1">
+  <img src="Images/news/post libelula.png" alt="Noticia 2">
+  <img src="Images/news/post ningun artista.jpg" alt="Noticia 3">
+  <img src="Images/news/post october 29.jpg" alt="Noticia 4">
+  <img src="Images/news/post rotten pays.jpg" alt="Noticia 5">
+</div>
+
+<div id="image-container">
+  <div class="close-btn" id="close-btn">×</div>
+  <img src="" alt="Imagen ampliada" id="big-image">
+</div>
+
+
+
+
+
+</section>
+
+
+
+  <footer>
+    
+    <h1>
+     BombaEstereo © 2024–2025
+    </h1>
+
+    <div>
+
+      <div class="socialmedia-icons">
+    <a href="https://www.facebook.com/?locale=es_LA"><img src="Images/logos/face.png" alt="Facebook"></a>
+    <a href="https://www.instagram.com"><img src="Images/logos/instagram.png" alt="Instagram"></a>
+    <a href="https://x.com/?lang=es"><img src="Images/logos/X.png" alt="Twitter"></a>
+  </div>
+    </div>
+
+  </footer>
+
+  
+
+
+</body>
+</html>

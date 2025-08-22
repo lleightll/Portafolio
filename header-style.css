@@ -1,0 +1,209 @@
+header {
+  background-color: black;
+  padding: 15px 20px;      /* más espacio horizontal */
+  display: flex;           /* activa flexbox */
+  align-items: center;     /* alinea verticalmente */
+  justify-content: center; /* centra contenido horizontalmente */
+  position: relative;      /* para que .login-btn absolute se posicione bien */
+}
+
+
+/* Botón menú lateral a la izquierda */
+.menu-btn {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 4px;
+  position: absolute;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.menu-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+
+
+.side-btn {
+  position: absolute;  /* para sacarlo del flujo flex y posicionarlo */
+  left: 5px;          
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  width: 128px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.side-btn:hover {
+  background-color: white;
+  color: #111;
+}
+
+
+
+/* El h1 ocupa el espacio central */
+header h1 {
+  font-size: 24px;
+  font-weight: normal;
+  color: white;
+  font-family: 'Noto Sans Gothic', sans-serif;
+  text-align: center;
+  transform: scaleX(1.2);
+  text-transform: uppercase;
+  word-spacing: 4px;
+  letter-spacing: 10px;
+  margin: 0 auto;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Botón alineado a la derecha */
+.login-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-family: 'Noto Sans Gothic', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  position: absolute;      /* se posiciona respecto a header */
+  right: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: white;
+  color: #222;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+
+
+  background-color: black;
+  padding: 15px 20px;      
+  display: flex;          
+  position: relative; 
+  justify-content: space-between;
+
+}
+
+footer h1 {
+
+  font-size: 12px;
+  font-weight: lighter;
+  color: white;
+  font-family: 'Noto Sans Gothic', sans-serif;
+
+
+}
+
+.socialmedia-icons {
+  display: flex;
+  gap: 10px; /* espacio entre íconos */
+}
+
+.socialmedia-icons img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.socialmedia-icons img:hover {
+  transform: scale(1.1);
+}
+
+
+
+  /* Sidebar */
+    #sidebar {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 250px;
+      height: 300px;
+      background-color: #111;
+      padding: 20px;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+      z-index: 4;
+      border-radius: 8px 0 0 8px;
+      box-shadow: -2px 0 8px rgba(0,0,0,0.7);
+    }
+
+    #sidebar.active {
+      transform: translateX(0);
+    }
+
+    #sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #sidebar ul li {
+      margin-bottom: 15px;
+    }
+
+    .sidebar-btn {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+      font-weight: bold;
+      padding: 10px;
+      width: 100%;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      text-align: left;
+
+    }
+
+    .sidebar-btn:hover {
+      background-color: white;
+      color: #111;
+    }
+
+    a {
+  color: white !important;
+  text-decoration: none;
+}

@@ -3,7 +3,7 @@
 .carousel-container {
   position: relative;
   width: 100%;
-  height: 824px;
+  height: 648px;
   overflow: hidden;
   margin: 0; /* ← Aquí está corregido */
 }
@@ -55,3 +55,4 @@
   width: 50%;
 
 }
+
